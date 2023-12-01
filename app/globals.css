@@ -89,14 +89,14 @@ body {
 }
 
 .contact_glass_bg {
-  @apply bg-[url('../public/img/mesh_contact.png')] bg-cover border border-[#ffffff25] rounded-[20px];
+  @apply bg-cover border border-[#ffffff25] rounded-[20px] bg-gradient-to-b from-[#000000d6] to-[#000000a5];
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(25px);
 }
 
 .input_styles {
-  @apply w-full mb-[16px] p-[10px] items-center flex rounded-[5px];
-  border: 1px solid rgba(255, 255, 255, 0);
+  @apply w-full mb-[16px] p-[10px] items-center flex rounded-[5px] border border-[#ffffff25] resize-none;
+
   background-color: rgba(58, 58, 58, 0.25);
   background-blend-mode: overlay, soft-light, normal;
 }
@@ -104,4 +104,8 @@ body {
 .input_styles::placeholder {
   @apply leading-[150%] text-[#afafaf80];
   text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.1);
+}
+
+.input_styles:focus {
+  @apply outline outline-primary;
 }
