@@ -24,6 +24,11 @@ body {
   @apply max-w-[1200px] w-full mx-auto px-[32px] tablet:px-[60px] desktop:px-0;
 }
 
+/* container without max width - which means padding x for mobile but full width for desktop so the background shows at all times */
+.container_dynamic {
+  @apply w-full mx-auto px-[32px] tablet:px-[60px] desktop:px-0;
+}
+
 .container_px_0 {
   @apply max-w-[1200px] mx-auto;
 }
@@ -31,11 +36,13 @@ body {
 /* 64px - 96px */
 .title_large {
   @apply font-bold text-[4rem] leading-none tablet:text-[6rem] tracking-tighter;
+  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
 }
 
 /* 38px - 48px */
 .title_small {
   @apply font-medium text-[2.3rem] tablet:text-[3rem];
+  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
 }
 
 /* 24px */
@@ -56,6 +63,10 @@ body {
   hover:bg-white hover:text-primary ease-in-out duration-150;
 }
 
+.submit_btn {
+  @apply px-[16px] py-[10px] bg-primary text-white rounded-[10px] flex items-center hover:bg-[#57438E] ease-in-out duration-150;
+}
+
 /* backgrounds + glass */
 
 .hero_bg {
@@ -64,9 +75,33 @@ body {
 
 .glass_bg {
   /* glass effects for section 1 */
-  @apply shadow-[0px_4px_24px_-1px_rgba(0,0,0,0.2)] backdrop-blur-[25px] desktop:border border-solid border-[#ffffff25] desktop:border-t-0 bg-[url('../public/img/mesh_mobile_2.png')] desktop:bg-gradient-to-b from-[#00000025] to-[#00000075] bg-cover;
+  @apply shadow-[0px_4px_24px_-1px_rgba(0,0,0,0.2)] backdrop-blur-[25px] desktop:border border-solid border-[#ffffff25]  desktop:border-t-0 bg-[url('../public/img/mesh_mobile_2.png')] desktop:bg-gradient-to-b from-[#00000025] to-[#00000075] bg-cover;
 }
 
 .icon_glow {
   filter: drop-shadow(0px 0px 7.400000095367432px rgba(162, 49, 0, 0.52));
+}
+
+/* contact */
+
+.contact_bg-img {
+  @apply bg-[url('../public/img/mesh_contact_2.png')] bg-cover;
+}
+
+.contact_glass_bg {
+  @apply bg-[url('../public/img/mesh_contact.png')] bg-cover border border-[#ffffff25] rounded-[20px];
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(25px);
+}
+
+.input_styles {
+  @apply w-full mb-[16px] p-[10px] items-center flex rounded-[5px];
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(58, 58, 58, 0.25);
+  background-blend-mode: overlay, soft-light, normal;
+}
+
+.input_styles::placeholder {
+  @apply leading-[150%] text-[#afafaf80];
+  text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.1);
 }
