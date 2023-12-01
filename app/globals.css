@@ -17,11 +17,56 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-black text-white;
+}
+
+.container {
+  @apply max-w-[1200px] w-full mx-auto px-[32px] tablet:px-[60px] desktop:px-0;
+}
+
+.container_px_0 {
+  @apply max-w-[1200px] mx-auto;
+}
+
+/* 64px - 96px */
+.title_large {
+  @apply font-bold text-[4rem] leading-none tablet:text-[6rem] tracking-tighter;
+}
+
+/* 38px - 48px */
+.title_small {
+  @apply font-medium text-[2.3rem] tablet:text-[3rem];
+}
+
+/* 24px */
+.heading {
+  @apply font-medium leading-tight text-[1.25rem] tablet:text-[1.35rem];
+  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
+}
+
+.body {
+  @apply leading-[150%] text-body;
+  text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.25);
+}
+
+/* buttons */
+
+.nav_btn {
+  @apply font-medium text-[1rem] border border-white rounded-full inline-block px-6 py-4
+  hover:bg-white hover:text-primary ease-in-out duration-150;
+}
+
+/* backgrounds + glass */
+
+.hero_bg {
+  @apply bg-[url('../public/img/mesh_mobile.png')] desktop:bg-[url('../public/img/mesh.png')] bg-cover bg-center;
+}
+
+.glass_bg {
+  /* glass effects for section 1 */
+  @apply shadow-[0px_4px_24px_-1px_rgba(0,0,0,0.2)] backdrop-blur-[25px] desktop:border border-solid border-[#ffffff25] desktop:border-t-0 bg-[url('../public/img/mesh_mobile_2.png')] desktop:bg-gradient-to-b from-[#00000025] to-[#00000075] bg-cover;
+}
+
+.icon_glow {
+  filter: drop-shadow(0px 0px 7.400000095367432px rgba(162, 49, 0, 0.52));
 }
