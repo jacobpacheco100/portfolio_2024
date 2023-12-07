@@ -33,6 +33,10 @@ body {
   @apply max-w-[1200px] mx-auto;
 }
 
+.container_footer {
+  @apply max-w-[480px] desktop:max-w-[1200px] mx-auto;
+}
+
 /* 64px - 96px */
 .title_large {
   @apply font-bold text-[4rem] leading-none tablet:text-[6rem] tracking-tighter;
@@ -54,6 +58,10 @@ body {
 .body {
   @apply leading-[150%] text-body;
   text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.25);
+}
+
+.footer_links {
+  @apply font-medium text-[18px];
 }
 
 /* buttons */

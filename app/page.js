@@ -2,6 +2,7 @@ import Image from "next/image";
 import S1_text_group from "./components/S1_text_group";
 import Project from "./components/Project";
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -104,6 +105,9 @@ export default function Home() {
 
       {/* contact */}
       <Form />
+
+      {/* footer */}
+      <Footer />
     </main>
   );
 }
