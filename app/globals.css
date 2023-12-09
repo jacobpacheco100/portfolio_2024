@@ -67,7 +67,7 @@ body {
 /* buttons */
 
 .nav_btn {
-  @apply font-medium text-[1rem] border border-white rounded-full inline-block px-6 py-4
+  @apply font-medium text-[1rem] border-2 border-white rounded-full inline-block px-6 py-4
   hover:bg-white hover:text-primary ease-in-out duration-150;
 }
 
