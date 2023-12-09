@@ -45,14 +45,14 @@ export default function Home() {
       <section className='container glass_bg  flex items-center justify-center desktop:absolute desktop:left-1/2 desktop:transform desktop:-translate-x-1/2 desktop:translate-y-[-712px] desktop:rounded-br-[20px] desktop:rounded-bl-[20px]'>
         <div className='grid medium:grid-cols-2 gap-[123px] py-[123px] desktop:pt-[150px] desktop:pb-[160px]'>
           <S1_text_group
-            icon={'/icons/pentool.svg'}
-            heading={'UI & UX Designer'}
-            body={`As a web developer and graphic designer, my work revolves around crafting not just websites but interactive masterpieces. Whether it's designing a `}
-          />
-          <S1_text_group
             icon={'/icons/code.svg'}
             heading={'Next JS Developer'}
-            body={`Transparency, creativity, and a relentless commitment to quality are at the core of my work ethic. When you choose to collaborate with me, you're not  hiring`}
+            body={`I love adapting to the latest trends and embracing cutting-edge tools and technologies. From leveraging advanced frameworks to writing clean, efficient code, I create websites that ensure optimal performance and user engagement.`}
+          />
+          <S1_text_group
+            icon={'/icons/pentool.svg'}
+            heading={'UI & UX Designer'}
+            body={`As a web designer, I blend creativity with functionality, crafting visually appealing and user-centric websites. My passion lies in delivering seamless digital experiences that captivate and engage users effectively.`}
           />
           <S1_text_group
             icon={'/icons/data.svg'}
