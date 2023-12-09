@@ -47,7 +47,7 @@ export default function Home() {
           <S1_text_group
             icon={'/icons/pentool.svg'}
             heading={'UI & UX Designer'}
-            body={`"As a web designer, I combine creativity and functionality to create visually pleasing, user-focused sites. I strive to deliver smooth digital experiences that effectively engage users."`}
+            body={`As a web designer, I combine creativity and functionality to create visually pleasing, user-focused sites. I strive to deliver smooth digital experiences that effectively engage users.`}
           />
           <S1_text_group
             icon={'/icons/code.svg'}
