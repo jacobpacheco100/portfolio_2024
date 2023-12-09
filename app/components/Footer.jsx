@@ -34,7 +34,7 @@ const Footer = () => {
 
           <a
             href='#'
-            className='flex footer_links mt-[112px] tablet:mt-0 tablet:pl-[38px] desktop:pl-[148px] '
+            className='flex footer_links mt-[112px] tablet:mt-0 tablet:pl-[38px] desktop:ml-[148px] '
           >
             back to top
             <Image
