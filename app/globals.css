@@ -16,6 +16,10 @@
   }
 }
 
+.glow {
+  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
+}
+
 body {
   @apply bg-black text-white;
 }
@@ -116,4 +120,11 @@ body {
 
 .input_styles:focus {
   @apply outline outline-primary;
+}
+
+/* footer */
+
+footer h1,
+footer a {
+  @apply glow;
 }
