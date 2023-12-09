@@ -20,6 +20,10 @@
   text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
 }
 
+.glow_small {
+  text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.25);
+}
+
 body {
   @apply bg-black text-white;
 }
@@ -43,25 +47,21 @@ body {
 
 /* 64px - 96px */
 .title_large {
-  @apply font-bold text-[4rem] leading-none tablet:text-[6rem] tracking-tighter;
-  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
+  @apply font-bold text-[4rem] leading-none tablet:text-[6rem] tracking-tighter drop-shadow-lg;
 }
 
 /* 38px - 48px */
 .title_small {
-  @apply font-medium text-[2.3rem] tablet:text-[3rem];
-  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
+  @apply font-medium text-[2.3rem] tablet:text-[3rem] drop-shadow-lg;
 }
 
 /* 24px */
 .heading {
-  @apply font-medium leading-tight text-[1.25rem] tablet:text-[1.35rem];
-  text-shadow: 0px 0px 13.100000381469727px rgba(255, 255, 255, 0.35);
+  @apply font-medium leading-tight text-[1.25rem] tablet:text-[1.35rem] drop-shadow-lg;
 }
 
 .body {
-  @apply leading-[150%] text-body;
-  text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.25);
+  @apply leading-[150%] text-body drop-shadow-lg;
 }
 
 .footer_links {
@@ -108,14 +108,12 @@ body {
 
 .input_styles {
   @apply w-full mb-[16px] p-[10px] items-center flex rounded-[5px] border border-[#ffffff25] resize-none;
-
   background-color: rgba(58, 58, 58, 0.25);
   background-blend-mode: overlay, soft-light, normal;
 }
 
 .input_styles::placeholder {
-  @apply leading-[150%] text-[#afafaf80];
-  text-shadow: 0px 0px 3.5px rgba(255, 255, 255, 0.1);
+  @apply leading-[150%] text-[#afafaf80] shadow-sm;
 }
 
 .input_styles:focus {
