@@ -22,7 +22,7 @@ const Project = (props) => {
         <h2 className='title_small'>{props.title}</h2>
         {/* small group */}
         <div className='flex flex-col items-center justify-center  tablet:items-start'>
-          <h3 className='text-[12px] desktop:font-medium desktop:text-[16px] mt-[8px]'>
+          <h3 className='text-[12px] desktop:font-medium desktop:text-[16px] mt-[8px] drop-shadow-lg'>
             {props.heading}
           </h3>
 

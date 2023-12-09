@@ -19,7 +19,7 @@ const Form = () => {
   }
   return (
     <>
-      <section className='mt-[350px] desktop:mt-[450px] contact_bg-img container_dynamic'>
+      <section className='mt-[350px] desktop:mt-[450px] contact_bg-img contact_container'>
         <div className='container contact_glass_bg translate-y-[-100px] py-[96px]'>
           <div className='flex flex-col items-center justify-between text-center'>
             <h2 className='title_small'>Lets get in touch!</h2>

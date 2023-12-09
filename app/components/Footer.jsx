@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className='bg-black pb-[112px] desktop:pb-[32px]'>
+    <footer className='bg-black pb-[112px] desktop:pb-[32px] drop-shadow-lg'>
       <div className='container flex flex-col items-center justify-center desktop:items-start relative'>
-        <h1 className='uppercase leading-none font-bold tracking-tighter text-[48px] tablet:text-[64px] desktop:text-[94px] max-w-[238px] tablet:max-w-[500px] desktop:max-w-[1000px] mt-[112px] desktop:mt-[24px]'>
+        <h1 className='uppercase leading-none font-bold tracking-tighter text-[48px] tablet:text-[64px] desktop:text-[94px] max-w-[238px] tablet:max-w-[500px] desktop:max-w-[1000px] mt-[112px] desktop:mt-[24px] drop-shadow-lg'>
           jacob pacheco digital designer
         </h1>
         <div className='flex flex-col items-center justify-center mt-[112px] tablet:flex-row tablet:justify-start '>
@@ -34,7 +34,7 @@ const Footer = () => {
 
           <a
             href='#'
-            className='flex footer_links mt-[112px] tablet:mt-0 tablet:pl-[38px] desktop:pl-[148px]'
+            className='flex footer_links mt-[112px] tablet:mt-0 tablet:pl-[38px] desktop:pl-[148px] '
           >
             back to top
             <Image
@@ -46,7 +46,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href='#'
+            href='top'
             className='footer_links text-[#ffffff50] hidden desktop:block absolute right-0'
           >
             jacobpach.1440@gmail.com
